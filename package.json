@@ -1,7 +1,7 @@
 {
-  "name": "Update Template",
+  "name": "Update-Template",
   "version": "1.0.0",
-  "description": "",
+  "description": "Phishing Template for Wifiphisher",
   "scripts": {
     "watch": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
