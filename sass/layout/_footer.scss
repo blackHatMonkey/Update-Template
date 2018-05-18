@@ -1,0 +1,15 @@
+.footer {
+    background-color: $color-black-light;
+    padding: 8rem 0;
+    font-size: 1.4rem;
+    color: $color-grey-light-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__copyright {
+        width: 80%;
+        border-top: .2rem solid $color-grey-light-2;
+    }
+
+}
