@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "Phishing Template for Wifiphisher",
   "scripts": {
+      "test": "echo test;echo hi; ls -a",
     "watch": "node-sass sass/main.scss css/style.css -w",
-    "devserver": "live-server",
+    "devserver": "live-server --host=0.0.0.0 --entry-file=index.html",
     "start": "npm-run-all --parallel devserver watch",
     "compile": "node-sass sass/main.scss css/style.comp.css",
     "prefix": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build": "npm-run-all compile prefix compress"
+    "build": "npm-run-all compile prefix compress; rm css/style.comp.css css/style.prefix.css"
   },
   "author": "Brian Smith",
   "license": "MIT",
